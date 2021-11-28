@@ -16,7 +16,7 @@ export class InicioComponent implements OnInit {
   }
 
   redireccionar(){
-    this.router.navigate(["registro"])
+    this.router.navigate(["registro-usuario"])
   }
 
 }

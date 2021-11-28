@@ -1,3 +1,36 @@
-<p>registro-mascota works!</p>
-<a class="waves-effect waves-light btn" (click)="redireccionar()">Listo!</a>
+<div class="container">
+    <div class="container interno">
+        <b>Registro Mascota</b>
+    </div>
+    <form class="row g-3 needs-validation" novalidate>
+        <div class="col-md-6 position-relative">
+          <label for="validationTooltip01" class="form-label">Nombre Animal</label>
+          <input type="text" class="form-control" id="validationTooltip01" required>
+          <div class="valid-tooltip">
+            Looks good!
+          </div>
+        </div>
+        <div class="col-md-3 position-relative">
+          <label for="validationTooltip04" class="form-label">Tipo Animal</label>
+          <select class="form-select" id="validationTooltip04" required>
+            <option selected disabled value="">Elegir</option>
+            <option>
+                Perro                
+            </option>
+            <option>
+                Gato                
+            </option>
+            <option>
+                Pajaro                
+            </option>
+          </select>
+          <div class="invalid-tooltip">
+            Please select a valid state.
+          </div>
+        </div>
+        <div class="col-12">
+          <button class="btn btn-primary" type="submit" (click)="redireccionar()">Listo!</button>
+        </div>
+      </form>
+</div>
 

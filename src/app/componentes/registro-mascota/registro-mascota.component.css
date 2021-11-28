@@ -1,4 +1,49 @@
-.waves-effect{
-    background-color:#00C064;
-    
+.container {
+  position: relative;
+  width: 500px;
+  margin-top: 15%;
+  background: #05a2c5;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+}
+
+.interno {
+  position: relative;
+  height: 71px;
+  top: 0%;
+  left: -2.3%;
+  background: #007691;
+  border-radius: 15px;
+  box-shadow: none;
+  margin-bottom: 20px;
+  
+}
+
+b{
+    position: relative;
+    font-size: 25px;
+    top:20%;
+    left: 28%;
+    color:#ffff;
+}
+
+label {
+  color: white;
+  font-size: 15px;
+}
+
+#validationTooltip01 {
+  background: white;
+  border-radius: 10px;
+}
+
+#validationTooltip04 {
+  border-radius: 10px;
+}
+
+.btn-primary {
+  background: #00c064;
+  border-radius: 15px;
+  border-color: #00c064;
+  margin-bottom: 20px;
 }

@@ -1,2 +1,86 @@
-<p>registro works!</p>
-<a class="waves-effect waves-light btn" (click)="redireccionar()">Registrarse</a>
+<div class="container">
+    <div class="container interno">
+<b>Registro Usuario</b>
+    </div>
+  <form class="row g-3 needs-validation" novalidate>
+    <div class="col-md-4 position-relative">
+      <label for="validationTooltip02" class="form-label">Nombres</label>
+      <input
+        type="text"
+        class="form-control"
+        id="validationTooltip02"
+        required
+      />
+      <div class="valid-tooltip">Looks good!</div>
+    </div>
+    <div class="col-md-4 position-relative">
+      <label for="validationTooltip02" class="form-label">Apellidos</label>
+      <input
+        type="text"
+        class="form-control"
+        id="validationTooltip02"
+        required
+      />
+      <div class="valid-tooltip">Looks good!</div>
+    </div>
+    <div class="col-md-4 position-relative">
+      <label for="validationTooltip02" class="form-label">Identificacion</label>
+      <div class="input-group has-validation">
+        <input
+          type="text"
+          class="form-control"
+          id="validationTooltip02"
+          aria-describedby="validationTooltipUsernamePrepend"
+          required
+        />
+        <div class="invalid-tooltip">
+          Please choose a unique and valid username.
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 position-relative">
+      <label for="validationTooltip03" class="form-label">Telefono</label>
+      <input
+        type="text"
+        class="form-control"
+        id="validationTooltip02"
+        required
+      />
+      <div class="invalid-tooltip">Please provide a valid city.</div>
+    </div>
+    <div class="col-md-6 position-relative">
+      <label for="validationTooltip03" class="form-label">Direccion</label>
+      <input
+        type="text"
+        class="form-control"
+        id="validationTooltip02"
+        required
+      />
+      <div class="invalid-tooltip">Please provide a valid city.</div>
+    </div>
+    <div class="col-md-6 position-relative">
+      <label for="validationTooltip03" class="form-label">Correo</label>
+      <input
+        type="text"
+        class="form-control"
+        id="validationTooltip02"
+        required
+      />
+      <div class="invalid-tooltip">Please provide a valid city.</div>
+    </div>
+
+    <div class="col-md-3 position-relative">
+      <label for="validationTooltip02" class="form-label">Contraseña</label>
+      <input
+        type="password"
+        class="form-control"
+        id="validationTooltip02"
+        required
+      />
+      <div class="invalid-tooltip">Please provide a valid zip.</div>
+    </div>
+    <div class="col-12">
+      <button class="btn btn-primary" type="submit" (click)="redireccionar()">Registrarse</button>
+    </div>
+  </form>
+</div>
