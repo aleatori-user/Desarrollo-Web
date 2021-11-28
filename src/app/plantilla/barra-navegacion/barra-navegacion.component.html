@@ -1,9 +1,21 @@
-<nav>
-    <div class="nav-wrapper">
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a (click)="inicioDireccion()">Inicio</a></li>
-        <li><a (click)="ingresarDireccion()">Ingresar</a></li>
-        <li><a href="collapsible.html">Contacto</a></li>
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #009EB4;" aria-label="Tenth navbar example">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" >Pets Clinic</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="inicioDireccion()">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="ingresarDireccion()">Ingresar</a>
+        </li>
       </ul>
     </div>
-  </nav>
+  </div>
+</nav>

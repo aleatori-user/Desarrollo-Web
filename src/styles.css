@@ -1,4 +1,3 @@
 body{
-    background-image: url("img/Desktop3.png");
-    background-repeat: repeat-x;
+    background: url(assets/img/Desktop3.png) no-repeat center center fixed; 
 }

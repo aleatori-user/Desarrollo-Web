@@ -1,8 +1,73 @@
-.waves-effect{
-    background-color:#00C064;
-    
+.container {
+  position: absolute;
+  width: 845px;
+  height: 770px;
+  left: 8%;
+  top: 15%;
+
+  background: #00b8d1;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
 }
 
-.logoPerro{
-    image-rendering: auto;
+.interno {
+  background: #009eb4;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 845px;
+  height: 100px;
+  left: 0%;
+  top: 40%;
+}
+
+.texto {
+  position: relative;
+  top: 25%;
+  left: 40%;
+  color: white;
+}
+
+.img-fluid {
+  position: relative;
+  top: 5%;
+  left: 36%;
+}
+
+.texto-agregado {
+  position: relative;
+  top: 30%;
+  left: 0%;
+  color: white;
+  background: transparent;
+  box-shadow: none;
+  width: 600px;
+  height: 250px;
+}
+b {
+  font-size: 25px;
+}
+
+.mascota{
+  
+  position: absolute;
+  left: 70%;
+  width: 400px;
+  box-shadow: none;
+  background: transparent;
+}
+
+.perro{
+  position: relative;
+  left: 0%;
+}
+
+.btn-primary{
+
+  position: relative;
+  left: 25%;
+  top: 10%;
+  background: #00C064;
+  border: 2px #00C064 solid;
+  border-radius: 15px;
+  height: 55px;
+
 }
