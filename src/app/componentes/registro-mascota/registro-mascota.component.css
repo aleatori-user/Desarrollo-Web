@@ -16,15 +16,14 @@
   border-radius: 15px;
   box-shadow: none;
   margin-bottom: 20px;
-  
 }
 
-b{
-    position: relative;
-    font-size: 25px;
-    top:20%;
-    left: 28%;
-    color:#ffff;
+b {
+  position: relative;
+  font-size: 25px;
+  top: 20%;
+  left: 28%;
+  color: #ffff;
 }
 
 label {
