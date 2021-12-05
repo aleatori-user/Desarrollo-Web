@@ -3,34 +3,50 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { RegistroComponent } from './componentes/registro/registro.component';
+import { RegistroUsuarioComponent } from './componentes/registro-usuario/registro-usuario.component';
 import { RegistroMascotaComponent } from './componentes/registro-mascota/registro-mascota.component';
-import { UsuarioCRUDComponent } from './componentes/usuario-crud/usuario-crud.component';
-import { InicioSesionComponent } from './componentes/inicio-sesion/inicio-sesion.component';
-import { VeterinarioCRUDComponent } from './componentes/veterinario-crud/veterinario-crud.component';
+import { UsuarioCRUDMascotasComponent } from './componentes/usuario-crud-mascotas/usuario-crud-mascotas.component';
+import { VeterinarioCRUDMascotasComponent } from './componentes/veterinario-crud-mascotas/veterinario-crud-mascotas.component';
 import { BarraNavegacionComponent } from './plantilla/barra-navegacion/barra-navegacion.component';
 import { PieDePaginaComponent } from './plantilla/pie-de-pagina/pie-de-pagina.component';
 import { InicioComponent } from './plantilla/inicio/inicio.component';
 import { ErrorComponent } from './plantilla/error/error.component';
+import { CRUDVeterinarioComponent } from './componentes/administrador/crud-veterinario/crud-veterinario.component';
+import { CRUDUsuarioComponent } from './componentes/administrador/crud-usuario/crud-usuario.component';
+import { RegistroVeterinarioComponent } from './componentes/administrador/registro-veterinario/registro-veterinario.component';
+import { FormularioComponent } from './componentes/usuario-crud-mascotas/formulario/formulario.component';
+import { FormularioHistorialComponent } from './componentes/usuario-crud-mascotas/formulario-historial/formulario-historial.component';
+import { SolicitudComponent } from './componentes/usuario-crud-mascotas/solicitud/solicitud.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { AdministradorComponent } from './componentes/administrador/administrador.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    RegistroComponent,
+    RegistroUsuarioComponent,
     RegistroMascotaComponent,
-    UsuarioCRUDComponent,
-    InicioSesionComponent,
-    VeterinarioCRUDComponent,
+    UsuarioCRUDMascotasComponent,
+    VeterinarioCRUDMascotasComponent,
     BarraNavegacionComponent,
     PieDePaginaComponent,
     InicioComponent,
-    ErrorComponent
+    ErrorComponent,
+    CRUDVeterinarioComponent,
+    CRUDUsuarioComponent,
+    RegistroVeterinarioComponent,
+    FormularioComponent,
+    FormularioHistorialComponent,
+    SolicitudComponent,
+    AdministradorComponent,
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents:[FormularioComponent]
 })
 export class AppModule { }

@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { VeterinarioCRUDComponent } from './veterinario-crud.component';
+import { VeterinarioCRUDMascotasComponent } from './veterinario-crud-mascotas.component';
 
 describe('VeterinarioCRUDComponent', () => {
-  let component: VeterinarioCRUDComponent;
-  let fixture: ComponentFixture<VeterinarioCRUDComponent>;
+  let component: VeterinarioCRUDMascotasComponent;
+  let fixture: ComponentFixture<VeterinarioCRUDMascotasComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ VeterinarioCRUDComponent ]
+      declarations: [ VeterinarioCRUDMascotasComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(VeterinarioCRUDComponent);
+    fixture = TestBed.createComponent(VeterinarioCRUDMascotasComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

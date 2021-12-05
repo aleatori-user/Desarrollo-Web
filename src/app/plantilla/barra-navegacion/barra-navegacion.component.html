@@ -1,21 +1,168 @@
-<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #009EB4;" aria-label="Tenth navbar example">
-  <div class="container-fluid">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+######## Barra de navegacion ########
+<div class="container-fluid p-0" style="margin-bottom: 50px">
+  <nav
+    class="navbar navbar-expand"
+    aria-label="Second navbar example"
+    style="background: #009eb4"
+  >
+    <div class="container">
+      <b class="navbar-brand" style="padding-right: 30px; font-size: 20px"
+        >Pets Clinic</b
+      >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarsExample02"
+        aria-controls="navbarsExample02"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" >Pets Clinic</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" (click)="inicioDireccion()">Inicio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" (click)="ingresarDireccion()">Ingresar</a>
-        </li>
-      </ul>
+      <div class="collapse navbar-collapse" id="navbarsExample02">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a
+              class="nav-link active h1"
+              style="
+                font-size: 20px;
+                color: #ffff;
+                padding-top: 26px;
+                padding-bottom: 20px;
+              "
+              aria-current="page"
+              (click)="inicioDireccion()"
+              >Inicio</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link h1"
+              style="
+                font-size: 20px;
+                color: #ffff;
+                padding-top: 26px;
+                padding-bottom: 20px;
+              "
+              >Contacto</a
+            >
+          </li>
+        </ul>
+        <form>
+          <button
+            class="btn btn-outline-success me-2"
+            style="color: #00c064; border-color: #00c064"
+            type="button"
+            data-bs-toggle="modal"
+            href="#contenido-modal"
+          >
+            Iniciar Sesion
+          </button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</div>
+######## Barra de navegacion ########
+
+######## Modal que contiene inicio sesion ########
+<div class="container">
+  <div
+    class="modal fade"
+    id="contenido-modal"
+    style="background: transparent; box-shadow: none"
+  >
+    <div class="modal-dialog modal-dialog-centered">
+      <div
+        class="modal-content"
+        style="background: #009eb4; border-radius: 15px"
+      >
+        <div class="modal-header">
+          <h5 class="modal-title" style="color: #ffff; font-size: 20px">
+            Iniciar sesión
+          </h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+            style="color: #ffff"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+            <form>
+              ######## Entrada correo ########
+              <div class="mb-3">
+                <label
+                  for="exampleInputEmail1"
+                  class="form-label"
+                  style="color: #ffff; font-size: 18px"
+                  >Correo</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  style="background: #ffff; border-radius: 10px"
+                />
+                <div id="emailHelp" class="form-text" style="color: #ffff">
+                  Nunca compartiremos su correo electrónico con nadie más.
+                </div>
+              </div>
+              ######## Entrada correo ########
+              
+              ######## Entrada contraseña ########
+              <div class="mb-3">
+                <label
+                  for="exampleInputPassword1"
+                  class="form-label"
+                  style="color: #ffff; font-size: 18px"
+                  >Contraseña</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                  style="background: #ffff; border-radius: 10px"
+                />
+              </div>
+              ######## Entrada contraseña ########
+            </form>
+          </div>
+        </div>
+        <div class="modal-footer" style="background: #009eb4">
+          <button
+            type="button"
+            class="btn btn-secondary"
+            data-bs-dismiss="modal"
+            style="
+              margin-right: 175px;
+              background: #e84848;
+              border-color: #e84848;
+              border-radius: 10px;
+            "
+          >
+            Cerrar
+          </button>
+          <button
+            type="button"
+            class="btn btn-primary"
+            style="
+              margin-left: 100px;
+              background: #00c064;
+              border-color: #00c064;
+              border-radius: 10px;
+            "
+          >
+            Iniciar
+          </button>
+        </div>
+      </div>
     </div>
   </div>
-</nav>
+</div>
+######## Modal que contiene inicio sesion ########
