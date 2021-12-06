@@ -1,1 +1,30 @@
-
+<form>
+  <div class="mb-3">
+    <label
+      for="recipient-name"
+      class="col-form-label"
+      style="color: #ffff; font-size: 16px"
+      >Nombre Animal:</label
+    >
+    <input
+      type="text"
+      class="form-control"
+      id="recipient-name"
+      style="background: #ffff; border-radius: 10px"
+    />
+    <div class="col-md-3 position-relative">
+      <label
+        for="validationTooltip04"
+        class="form-label"
+        style="color: #ffff; font-size: 16px"
+        >Tipo Animal</label
+      ><select id="validationTooltip04" required="" class="form-select">
+        <option selected="" disabled="" value="">Elegir</option>
+        <option>Perro</option>
+        <option>Gato</option>
+        <option>Pajaro</option>
+      </select>
+      <div class="invalid-tooltip">Please select a valid state.</div>
+    </div>
+  </div>
+</form>

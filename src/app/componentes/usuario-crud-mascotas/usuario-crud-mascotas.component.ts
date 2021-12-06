@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
-import { FormularioComponent } from './formulario/formulario.component';
+
 
 @Component({
   selector: 'app-usuario-crud-mascotas',
@@ -10,14 +9,11 @@ import { FormularioComponent } from './formulario/formulario.component';
 export class UsuarioCRUDMascotasComponent implements OnInit {
 
  
-  constructor(private formularioModal: NgbModal) { }
+  constructor() { }
 
   ngOnInit(): void {
   }
 
-  formulario(){
-    const modal = this.formularioModal.open(FormularioComponent);
-  }
 
 
 }
