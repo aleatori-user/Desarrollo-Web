@@ -1,1 +1,76 @@
-<p>Administrador works</p>
+<style>
+  @media (min-width: 992px) {
+    .alto-100 {
+      height: 100vh;
+    }
+  }
+</style>
+<div
+  class="
+    contaniner-fluid
+    d-flex
+    justify-content-center
+    align-items-center
+    alto-100
+  "
+>
+  <div
+    class="row  justify-content-center align-items-center"
+    style="background: #05a2c5; border-radius: 15px"
+  >
+    <div class="container p-0">
+      <div class="col-12" style="background: #007690; border-radius: 15px">
+        <div
+          class="
+            container
+            
+            d-flex
+            justify-content-center
+            align-items-center
+          "
+        >
+          <b class="m-3" style="font-size: 25px; color: #ffff">Administrador</b>
+        </div>
+      </div>
+      <div class="col-12">
+        <div
+          class="
+            container
+            
+            d-flex
+            justify-content-center
+            align-items-center
+          "
+        >
+          <button class="btn btn-primary m-3" style="background: #00C064; border-color:  #00C064; border-radius: 10px;" (click)="adminUsuario()">Admin Usuario</button> 
+        </div>
+      </div>
+      <div class="col-12">
+        <div
+          class="
+            container
+            
+            d-flex
+            justify-content-center
+            align-items-center
+          "
+        >
+        <button class="btn btn-primary m-3" style="background: #00C064; border-color:  #00C064; border-radius: 10px;" (click)="adminVeterinario()">Admin veterinario</button> 
+        </div>
+      </div>
+      <div class="col-12">
+        <div
+          class="
+            container
+            
+            d-flex
+            justify-content-center
+            align-items-center
+          "
+        >
+        <button class="btn btn-primary m-3" style="background: #00C064; border-color:  #00C064; border-radius: 10px;" (click)="registroVeterinario()">Registrar veterinario</button> 
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
